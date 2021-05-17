@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from rest_framework.serializers import FileField 
-from .models import mishra , Upload , Textfile
+from .models import mishra , Upload 
 
 
 
@@ -15,11 +15,11 @@ class UploadSerializer(serializers.ModelSerializer):
         model  = Upload
         fields = ['file_uploaded']
 
-class TextfileSerilizer(serializers.ModelSerializer):
-    class Meta:
-        model = Textfile
-        fields = ['file']
-         
+
+
+
+
+
 
 
 
